@@ -1,0 +1,235 @@
+/*.......common-styles............*/
+.title
+	font-family: "Open Sans", sans-serif
+	font-weight: 700
+	font-size: 45.15px
+	background: linear-gradient(left, #01f3a5, #06f6eb)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	color: #06f6eb
+/*.......end-common-styles............*/
+/*........header..............*/
+.wrapp-header
+	width: 100%
+	max-width: 1600px
+	margin: 0 auto
+	background: url("../img/header_bg.png") center center no-repeat
+	background-size: cover
+.header
+	width: 73.125% /*1170px*/
+	margin: 0 auto
+	padding: 40px 0 310px
+
+	.header__top-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.header__social .social
+			display: flex
+			animation-name: fadeInUp
+			animation-duration: 1s
+			animation-fill-mode: both
+
+			li a
+				font-size: 1.125em
+				color: #ffffff
+			li:first-child
+				margin-left: 15px
+			li:nth-child(2)
+				margin: 0 25px
+
+		.header__navigation
+
+			/*..........humburger............*/
+			.nav_humburger
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-items: flex-end
+				animation-name: fadeInDown
+				animation-duration: 1s
+				animation-fill-mode: both
+				cursor: pointer
+
+				.humburger-line1
+					width: 40px
+					height: 3px
+					background-color: #ffffff
+
+				.humburger-line2
+					width: 32px
+					height: 3px
+					background-color: #ffffff
+					margin: 7px 0
+
+				.humburger-line3
+					width: 40px
+					height: 3px
+					background-color: #ffffff
+			/*..........end-humburger............*/
+
+	/*....................main-text............*/
+	.header__greeting
+		padding-top: 287px
+		.greeting
+			font-family: "Open Sans", sans-serif
+			font-weight: 300
+			font-size: 120px
+			color: #ecfbf5
+			animation-name: fadeInLeft
+			animation-duration: 1s
+			animation-fill-mode: both
+		.header_named
+			animation-name: fadeInRight
+			animation-duration: 1.5s
+			animation-fill-mode: both
+			.hed_text-light
+				font-family: "Open Sans", sans-serif
+				font-weight: 300
+				font-size: 84px
+				color: #ecfbf5
+
+			.header_text-semibold
+				font-family: "Open Sans", sans-serif
+				font-weight: 600
+				font-size: 84px
+				color: #ecfbf5
+
+		.header__speciality
+			font-family: "Open Sans", sans-serif
+			font-weight: 400
+			font-size: 28px
+			color: #ecfbf5
+			animation-name: fadeInLeft
+			animation-duration: 1s
+			animation-fill-mode: both
+	/*...............end-main-text............*/
+/*........end-header..............*/
+/*........abut-us................*/
+.wrapp-about-me
+	width: 100%
+	max-width: 1600px
+	margin: 0 auto
+	background-color: #22252c
+
+	.about-me
+		width: 73.125% /*1170px*/
+		margin: 0 auto
+		padding: 180px 0 175px
+
+		.about-me__block
+
+			.about-me__wrapp-elem
+				display: flex
+				justify-content: space-between
+				align-items: flex-start
+				flex-wrap: wrap
+
+				.about-me__photo
+
+					.about-me__border
+						width: 385px
+						height: 385px
+						border: 7px solid #00d7bb
+
+						.about-me__img
+							width: 100%
+							max-width: 385px
+							height: auto
+							transform: translate(-45px, 45px)
+
+		.about-me__interests
+			margin: 130px 0 75px 6.8376068376068376068376068376068%
+
+		.about-me__interests-icon
+			display: flex
+			justify-content: space-around
+			align-items: center
+			flex-wrap: wrap
+			padding: 0 1% 0 3%
+
+			li:nth-child(1) .about-me__icon i, li:nth-child(4) .about-me__icon i
+				transform: rotate(-45deg)
+
+
+			li
+				margin: 0
+				&:hover .about-me__icon_description
+					visibility: visible
+					opacity: 1
+
+				.about-me__icon
+					width: 95px
+					height: 95px
+					border: 3px solid #00d7bb
+					border-radius: 50%
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: background 1s linear
+
+					&:hover
+						background: -webkit-linear-gradient(-235deg, #02f3ad 25%, #05f6e1 60%)
+					&:hover i
+						color: #ffffff
+					&:hover .about-me__icon_description
+						display: flex 
+					i
+						font-size: 2.75em
+						color: #00d7bb
+						transition: color .3s
+
+				.about-me__icon_description
+					visibility: hidden
+					opacity: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					margin-top: 25px
+					font-family: "Open Sans", sans-serif
+					font-weight: 400
+					font-size: 1.5625em
+					color: #eaeaeb
+					transition: opacity .4s
+
+.about-me__description
+	width: 100%
+	max-width: 462px
+	font-family: "Open Sans", sans-serif
+	font-weight: 300
+	line-height: 25px
+	font-size: 14px
+	color: #d4d4d5
+	margin: 30px 0 23px
+.about-me__contact
+	li
+		font-family: "Open Sans", sans-serif
+		font-weight: 400
+		font-size: 1.125em
+		color: #ffffff
+		margin-bottom: 5px
+
+.about-me_green
+	font-family: "Open Sans", sans-serif
+	font-weight: 400
+	font-size: 1.125em
+	color: #00d7bb
+	text-transform: uppercase
+
+.about-me__btn
+	width: 195px
+	height: 55px
+	margin-top: 45px
+	margin-left: 9.4017094017094017094017094017094%
+	border: none
+	border-radius: 7px
+	background: linear-gradient(45deg, #01d7c3 7%, #19c57a 46%, #0dde92 97%)
+	cursor: pointer
+	transition: opacity .2s
+	color: #ffffff
+	font-size: 12.78px
+	&:hover
+		opacity: 0.9
+	&:active
+		opacity: 0.7
+/*........end-abut-us............*/

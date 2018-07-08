@@ -1,0 +1,5 @@
+OpenSans light
+OpenSans Semibold
+OpenSans Regular
+OpenSans Bold
+OpenSans Extrabold

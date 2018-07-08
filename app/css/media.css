@@ -1,0 +1,27 @@
+@media screen and (max-width: 1366px) {
+  .header {
+    padding: 40px 0 170px; }
+  .header .header__greeting {
+    padding-top: 200px; }
+  .header .header__greeting .greeting {
+    font-size: 90px; }
+  .header .header__greeting .header_named .hed_text-light {
+    font-size: 65px; }
+  .header .header__greeting .header_named .header_text-semibold {
+    font-size: 65px; }
+  .header .header__greeting .header__speciality {
+    font-size: 25px; } }
+
+@media screen and (max-width: 780px) {
+  .header .header__greeting .greeting {
+    font-size: 60px; }
+  .header .header__greeting .header_named .hed_text-light {
+    font-size: 35px; }
+  .header .header__greeting .header_named .header_text-semibold {
+    font-size: 35px; }
+  .header .header__greeting .header__speciality {
+    font-size: 20px; } }
+
+@media screen and (max-width: 400px) {
+  .header {
+    width: 90%; } }

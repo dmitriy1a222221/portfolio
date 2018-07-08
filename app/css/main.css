@@ -1,0 +1,315 @@
+/*.......common-styles............*/
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45.15px;
+  background: -webkit-gradient(linear, left top, right top, from(#01f3a5), to(#06f6eb));
+  background: -webkit-linear-gradient(left, #01f3a5, #06f6eb);
+  background: -o-linear-gradient(left, #01f3a5, #06f6eb);
+  background: linear-gradient(left, #01f3a5, #06f6eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #06f6eb; }
+
+/*.......end-common-styles............*/
+/*........header..............*/
+.wrapp-header {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: url("../img/header_bg.png") center center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.header {
+  width: 73.125%;
+  margin: 0 auto;
+  padding: 40px 0 310px;
+  /*....................main-text............*/
+  /*...............end-main-text............*/ }
+  .header .header__top-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .header__top-block .header__social .social {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-animation-name: fadeInUp;
+              animation-name: fadeInUp;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; }
+      .header .header__top-block .header__social .social li a {
+        font-size: 1.125em;
+        color: #ffffff; }
+      .header .header__top-block .header__social .social li:first-child {
+        margin-left: 15px; }
+      .header .header__top-block .header__social .social li:nth-child(2) {
+        margin: 0 25px; }
+    .header .header__top-block .header__navigation {
+      /*..........humburger............*/
+      /*..........end-humburger............*/ }
+      .header .header__top-block .header__navigation .nav_humburger {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-animation-name: fadeInDown;
+                animation-name: fadeInDown;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        cursor: pointer; }
+        .header .header__top-block .header__navigation .nav_humburger .humburger-line1 {
+          width: 40px;
+          height: 3px;
+          background-color: #ffffff; }
+        .header .header__top-block .header__navigation .nav_humburger .humburger-line2 {
+          width: 32px;
+          height: 3px;
+          background-color: #ffffff;
+          margin: 7px 0; }
+        .header .header__top-block .header__navigation .nav_humburger .humburger-line3 {
+          width: 40px;
+          height: 3px;
+          background-color: #ffffff; }
+  .header .header__greeting {
+    padding-top: 287px; }
+    .header .header__greeting .greeting {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 120px;
+      color: #ecfbf5;
+      -webkit-animation-name: fadeInLeft;
+              animation-name: fadeInLeft;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; }
+    .header .header__greeting .header_named {
+      -webkit-animation-name: fadeInRight;
+              animation-name: fadeInRight;
+      -webkit-animation-duration: 1.5s;
+              animation-duration: 1.5s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; }
+      .header .header__greeting .header_named .hed_text-light {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 84px;
+        color: #ecfbf5; }
+      .header .header__greeting .header_named .header_text-semibold {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 84px;
+        color: #ecfbf5; }
+    .header .header__greeting .header__speciality {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      color: #ecfbf5;
+      -webkit-animation-name: fadeInLeft;
+              animation-name: fadeInLeft;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; }
+
+/*........end-header..............*/
+/*........abut-us................*/
+.wrapp-about-me {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #22252c; }
+  .wrapp-about-me .about-me {
+    width: 73.125%;
+    margin: 0 auto;
+    padding: 180px 0 175px; }
+    .wrapp-about-me .about-me .about-me__block .about-me__wrapp-elem {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .wrapp-about-me .about-me .about-me__block .about-me__wrapp-elem .about-me__photo .about-me__border {
+        width: 385px;
+        height: 385px;
+        border: 7px solid #00d7bb; }
+        .wrapp-about-me .about-me .about-me__block .about-me__wrapp-elem .about-me__photo .about-me__border .about-me__img {
+          width: 100%;
+          max-width: 385px;
+          height: auto;
+          -webkit-transform: translate(-45px, 45px);
+              -ms-transform: translate(-45px, 45px);
+                  transform: translate(-45px, 45px); }
+    .wrapp-about-me .about-me .about-me__interests {
+      margin: 130px 0 75px 6.8376068376068376068376068376068%; }
+    .wrapp-about-me .about-me .about-me__interests-icon {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      padding: 0 1% 0 3%; }
+      .wrapp-about-me .about-me .about-me__interests-icon li:nth-child(1) .about-me__icon i, .wrapp-about-me .about-me .about-me__interests-icon li:nth-child(4) .about-me__icon i {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+      .wrapp-about-me .about-me .about-me__interests-icon li {
+        margin: 0; }
+        .wrapp-about-me .about-me .about-me__interests-icon li:hover .about-me__icon_description {
+          visibility: visible;
+          opacity: 1; }
+        .wrapp-about-me .about-me .about-me__interests-icon li .about-me__icon {
+          width: 95px;
+          height: 95px;
+          border: 3px solid #00d7bb;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-transition: background 1s linear;
+          -o-transition: background 1s linear;
+          transition: background 1s linear; }
+          .wrapp-about-me .about-me .about-me__interests-icon li .about-me__icon:hover {
+            background: -webkit-linear-gradient(-235deg, #02f3ad 25%, #05f6e1 60%); }
+          .wrapp-about-me .about-me .about-me__interests-icon li .about-me__icon:hover i {
+            color: #ffffff; }
+          .wrapp-about-me .about-me .about-me__interests-icon li .about-me__icon:hover .about-me__icon_description {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex; }
+          .wrapp-about-me .about-me .about-me__interests-icon li .about-me__icon i {
+            font-size: 2.75em;
+            color: #00d7bb;
+            -webkit-transition: color .3s;
+            -o-transition: color .3s;
+            transition: color .3s; }
+        .wrapp-about-me .about-me .about-me__interests-icon li .about-me__icon_description {
+          visibility: hidden;
+          opacity: 0;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-top: 25px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400;
+          font-size: 1.5625em;
+          color: #eaeaeb;
+          -webkit-transition: opacity .4s;
+          -o-transition: opacity .4s;
+          transition: opacity .4s; }
+
+.about-me__description {
+  width: 100%;
+  max-width: 462px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 14px;
+  color: #d4d4d5;
+  margin: 30px 0 23px; }
+
+.about-me__contact li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  color: #ffffff;
+  margin-bottom: 5px; }
+
+.about-me_green {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  color: #00d7bb;
+  text-transform: uppercase; }
+
+.about-me__btn {
+  width: 195px;
+  height: 55px;
+  margin-top: 45px;
+  margin-left: 9.4017094017094017094017094017094%;
+  border: none;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  background: -webkit-linear-gradient(45deg, #01d7c3 7%, #19c57a 46%, #0dde92 97%);
+  background: -o-linear-gradient(45deg, #01d7c3 7%, #19c57a 46%, #0dde92 97%);
+  background: linear-gradient(45deg, #01d7c3 7%, #19c57a 46%, #0dde92 97%);
+  cursor: pointer;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s;
+  color: #ffffff;
+  font-size: 12.78px; }
+  .about-me__btn:hover {
+    opacity: 0.9; }
+  .about-me__btn:active {
+    opacity: 0.7; }
+
+/*........end-abut-us............*/
