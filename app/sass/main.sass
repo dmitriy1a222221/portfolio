@@ -7,6 +7,19 @@
 	-webkit-background-clip: text
 	-webkit-text-fill-color: transparent
 	color: #06f6eb
+	text-transform: uppercase
+
+.text-left
+	text-align: left
+
+.text-right
+	text-align: right
+
+.margin-top
+	margin-top: 178px
+
+.margin-bottom
+	margin-bottom: 150px
 /*.......end-common-styles............*/
 /*........header..............*/
 .wrapp-header
@@ -15,6 +28,7 @@
 	margin: 0 auto
 	background: url("../img/header_bg.png") center center no-repeat
 	background-size: cover
+	overflow: hidden
 .header
 	width: 73.125% /*1170px*/
 	margin: 0 auto
@@ -115,7 +129,7 @@
 	.about-me
 		width: 73.125% /*1170px*/
 		margin: 0 auto
-		padding: 180px 0 175px
+		padding: 180px 0 140px
 
 		.about-me__block
 
@@ -123,7 +137,7 @@
 				display: flex
 				justify-content: space-between
 				align-items: flex-start
-				flex-wrap: wrap
+				flex-wrap: wraps
 
 				.about-me__photo
 
@@ -150,7 +164,8 @@
 
 			li:nth-child(1) .about-me__icon i, li:nth-child(4) .about-me__icon i
 				transform: rotate(-45deg)
-
+			li:last-child
+				max-width: 95px
 
 			li
 				margin: 0
@@ -191,6 +206,8 @@
 					font-size: 1.5625em
 					color: #eaeaeb
 					transition: opacity .4s
+.about-me__definition
+	margin-left: 20px
 
 .about-me__description
 	width: 100%
@@ -215,21 +232,609 @@
 	font-size: 1.125em
 	color: #00d7bb
 	text-transform: uppercase
+.about-me__wrapp-btn
 
-.about-me__btn
-	width: 195px
-	height: 55px
-	margin-top: 45px
-	margin-left: 9.4017094017094017094017094017094%
-	border: none
-	border-radius: 7px
-	background: linear-gradient(45deg, #01d7c3 7%, #19c57a 46%, #0dde92 97%)
-	cursor: pointer
-	transition: opacity .2s
-	color: #ffffff
-	font-size: 12.78px
-	&:hover
-		opacity: 0.9
-	&:active
-		opacity: 0.7
+	.about-me__btn
+		width: 195px
+		height: 55px
+		margin-top: 45px
+		margin-left: 7.401709%
+		border: none
+		border-radius: 7px
+		background: linear-gradient(45deg, #01d7c3 7%, #19c57a 46%, #0dde92 97%)
+		cursor: pointer
+		transition: opacity .2s
+		color: #ffffff
+		font-size: 12.78px
+		&:hover
+			opacity: 0.9
+		&:active
+			opacity: 0.7
 /*........end-abut-us............*/
+/*...........education...........*/
+.wrapp-education
+	width: 100%
+	max-width: 1600px
+	margin: 0 auto
+	background-color: #313741
+	overflow: hidden
+
+	.education
+		width: 73.125% /*1170px*/
+		margin: 0 auto
+		padding: 180px 0 170px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+.education-work__ed
+	margin-bottom: 140px
+
+.edu-work__list_first
+	display: none
+	width: 100%
+	justify-content: center
+
+	li:nth-child(1)
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	li:nth-child(2)
+		margin: 0 20px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	li
+		//display: flex
+		//justify-content: space-between
+		margin: 0 0 45px
+
+		.graduation-cap
+			width: 67px
+			height: 67px
+			border: 3px solid #00d7bb
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			position: relative
+			margin-bottom: 105px
+
+			&:after
+				content: ''
+				display: block
+				width: 5px
+				height: 110px
+				position: absolute
+				top: 100%
+				left: 48%
+				background-color: #00d7bb
+
+			i
+				color: #00d7bb
+
+		.block-border-point-response
+			display: flex
+			justify-content: center
+			align-items: center
+			justify-self: center
+			width: 35px
+			height: 35px
+			border: 3px solid #00d7bb
+			border-radius: 50%
+			margin: 0 20px 165px
+			position: relative
+
+			&_first
+				margin-bottom: 330px
+				&:after
+					height: 333px
+
+			&_second
+				margin-bottom: 120px
+				&:after
+					height: 124px
+
+			&:after
+				content: ''
+				display: block
+				width: 5px
+				//height: 171px
+				position: absolute
+				top: 100%
+				left: 43%
+				background-color: #00d7bb
+
+			.block-point
+				width: 11px
+				height: 11px
+				background-color: #00d7bb
+				border-radius: 50%
+
+		.block-info
+			margin-top: 150px
+			.named
+				font-family: "Open Sans", sans-serif
+				font-weight: 600
+				font-size: 27px
+				text-transform: uppercase
+				color: #00d7bb
+
+			.named__description
+				font-family: "Open Sans", sans-serif
+				font-weight: 400
+				font-size: 16px
+				text-transform: uppercase
+				color: #bfc0c2
+
+		.list-item__description
+			width: 100%
+			height: auto
+			max-width: 395px /*275px*/
+			font-family: "Open Sans", sans-serif
+			font-weight: 400
+			line-height: 20px
+			font-size: 14px
+			color: #bfc0c2
+
+	.plug
+		width: 18px
+		height: 18px
+		background-color: #00d7bb
+		border-radius: 50%
+.edu-work__list
+	width: 100%
+	display: flex
+	justify-content: center
+
+	li:nth-child(2)
+		margin: 0 20px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	li
+		//display: flex
+		//justify-content: space-between
+		margin: 155px 0 45px
+
+		.graduation-cap
+			width: 67px
+			height: 67px
+			border: 3px solid #00d7bb
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			position: relative
+			margin-bottom: 105px
+
+			&:after
+				content: ''
+				display: block
+				width: 5px
+				height: 108px
+				position: absolute
+				top: 100%
+				left: 46%
+				background-color: #00d7bb
+
+			i
+				color: #00d7bb
+
+		.block-border-point
+			display: flex
+			justify-content: center
+			align-items: center
+			justify-self: center
+			width: 35px
+			height: 35px
+			border: 3px solid #00d7bb
+			border-radius: 50%
+			margin: 0 20px 165px
+			position: relative
+
+			&:after
+				content: ''
+				display: block
+				width: 5px
+				height: 171px
+				position: absolute
+				top: 100%
+				left: 43%
+				background-color: #00d7bb
+
+			.block-point
+				width: 11px
+				height: 11px
+				background-color: #00d7bb
+				border-radius: 50%
+
+		.block-info
+			.named
+				font-family: "Open Sans", sans-serif
+				font-weight: 600
+				font-size: 27px
+				text-transform: uppercase
+				color: #00d7bb
+
+			.named__description
+				font-family: "Open Sans", sans-serif
+				font-weight: 400
+				font-size: 16px
+				text-transform: uppercase
+				color: #bfc0c2
+
+		.list-item__description
+			width: 100%
+			height: auto
+			max-width: 395px /*275px*/
+			font-family: "Open Sans", sans-serif
+			font-weight: 400
+			line-height: 20px
+			font-size: 14px
+			color: #bfc0c2
+
+	.plug
+		width: 18px
+		height: 18px
+		background-color: #00d7bb
+		border-radius: 50%
+
+/*...........end-education........*/
+/*...............work...............*/
+.wrapp-work
+	width: 100%
+	max-width: 1600px
+	margin: 0 auto
+	background-color: #22252c
+	overflow: hidden
+
+	.work
+		width: 73.125% /*1170px*/
+		margin: 0 auto
+		padding: 180px 0 170px
+		display: flex
+		flex-direction: column
+		align-items: center
+/*...........end work............*/
+/*...........prof-sills...........*/
+.wrapp-prof-skills
+	width: 100%
+	max-width: 1600px
+	margin: 0 auto
+	background-color: #22252c
+	overflow: hidden
+
+	.prof-skills
+		width: 73.125% /*1170px*/
+		margin: 0 auto
+		padding: 60px 0 125px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	.wrapp__skills-block
+		width: 100%
+		padding-top: 60px
+		background-color: #313741
+
+		.skills-block__list_external
+			width: 73.125% /*1170px*/
+			margin: 0 auto
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+
+			li
+				width: 50%
+				display: flex
+				flex-direction: column
+				align-items: center
+
+				.skills-block__list_internal
+					width: 100%
+
+					li
+						width: 100%
+						margin-bottom: 50px
+
+.description-skills
+	width: 78.632478632478632478632478632479% /*460px*/
+	display: flex
+	justify-content: flex-start
+	font-family: "Open Sans", sans-serif
+	font-weight: 500
+	font-size: 20px
+	color: #ffffff
+	position: relative
+	margin-bottom: 12px
+
+	.procent
+		position: absolute
+		left: 17%
+
+.bar-panel
+	width: 78.632478632478632478632478632479% /*460px*/
+	height: 5px
+	background-color: #0f1012
+
+	.bar-line
+		width: 20%
+		height: 5px
+		background-color: #00d7bb
+		position: relative
+
+		&:after
+			content: ''
+			display: block
+			width: 12px
+			height: 12px
+			background-color: #00d7bb
+			border-radius: 50%
+			position: absolute
+			top: -55%
+			right: 0
+			z-index: 3
+
+/*...........end prof-sills...........*/
+/*...........portfolio...............*/
+.wrapp-portfolio
+	width: 100%
+	max-width: 1600px
+	margin: 0 auto
+	background-color: #22252c
+	overflow: hidden
+
+	.portfolio
+		width: 73.125% /*1170px*/
+		margin: 0 auto
+		padding: 140px 0 0
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		.portfolio__title
+			padding-bottom: 140px
+
+	.portfolio__my-works
+		width: 100%
+		padding: 100px 0
+		background: url("../img/portfolio_background.png") center center no-repeat
+		background-size: cover
+
+		.portfolio__list
+			width: 73.125% /*1170px*/
+			margin: 0 auto
+			//padding: 0 9.4017094017094017094017094017094%
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+
+			li
+				width: 300px
+				height: 300px
+				margin: 0 25px 25px 0
+				background-repeat: no-repeat
+				background-size: cover
+
+				&:hover .more-block
+					visibility: visible
+					background-color: rgba(255,255,255,0.85)
+					border: 10px solid #a6bcc0
+
+					.block-plus
+						opacity: 1
+
+						&:after
+							opacity: 1
+
+					.work__description
+						opacity: 1
+
+				.more-block
+					visibility: hidden
+					width: 100%
+					height: 100%
+					transition: visibility, .2s
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+
+					.block-plus
+						opacity: 0
+						width: 69px
+						height: 2px
+						background-color: #02cfb4
+						padding: 108px auto 0
+						position: relative
+
+
+						&:after
+							content: ''
+							display: block
+							opacity: 0
+							width: 2px
+							height: 69px
+							background-color: #02cfb4
+							position: absolute
+							top: -1725%
+							left: 48%
+
+					.work__description
+						display: flex
+						flex-direction: column
+						padding: 90px 0 0 25px
+						width: 100%
+						opacity: 0
+						transition: opacity .2s
+
+						.work__title
+							font-family: "Open Sans", sans-serif
+							font-weight: bold
+							font-size: 21px
+							color: #22252c
+							text-transform: uppercase
+
+						.work__sub-title
+							font-family: "Open Sans", sans-serif
+							font-weight: 600
+							font-size: 14px
+							color: #02cfb4
+							text-transform: uppercase
+
+/*................end portfolio.........*/
+/*..........contact me...............*/
+.wrapp-contact
+	width: 100%
+	max-width: 1600px
+	margin: 0 auto
+	background-color: #22252c
+	overflow: hidden
+
+	.contact
+		width: 73.125% /*1170px*/
+		margin: 0 auto
+		padding: 140px 0 0
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		.contact__title
+			margin-bottom: 175px
+
+		.contact-form
+			width: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding-bottom: 50px
+
+			.wrapp-input-form
+				width: 100%
+				display: flex
+				justify-content: space-around
+				flex-wrap: wrap
+				margin-bottom: 30px
+
+				input
+					width: 47.264957264957264957264957264957%
+					height: 40px
+					background-color: #22252c
+					border: none
+					border-bottom: 2px solid #58616d
+					font-family: "Open Sans", sans-serif
+					font-weight: 400
+					font-size: 14px
+					color: #8491a2
+					transition: border-bottom-color .3s
+
+					&:focus
+						border-bottom: 2px solid #02cfb4
+
+			.contact-message
+				width: 97.435897435897435897435897435897%
+				height: 270px
+				background-color: #22252c
+				border: none
+				border-bottom: 2px solid #58616d
+				font-family: "Open Sans", sans-serif
+				font-weight: 400
+				font-size: 14px
+				color: #8491a2
+				transition: border-bottom-color .3s
+				margin-bottom: 70px
+				resize: none
+
+				&:focus
+					border-bottom: 2px solid #02cfb4
+
+			.contact-submit
+				padding: 15px 45px
+				background-color: #22252c
+				font-family: "Open Sans", sans-serif
+				font-weight: 600
+				font-size: 14px
+				color: #05bea6
+				border: none
+				position: relative
+				z-index: 2
+				border-left: 1px solid #01f3a3
+				border-right: 1px solid #06f6eb
+				background-image: linear-gradient(to right, #01f3a3 0%, #06f6eb 100%), linear-gradient(to right, #01f3a3 0%, #06f6eb 100%)
+				background-position: 0 48px, 100% 0
+				background-repeat: no-repeat
+				background-size: 100% 1px
+				cursor: pointer
+				transition: opacity .2s
+
+				&:hover
+					opacity: .8
+				&:active
+					opacity: .5
+
+/*............end contact me..........*/
+/*.................footer.............*/
+.wrapp-footer
+	width: 100%
+	max-width: 1600px
+	margin: 0 auto
+	background-color: #22252c
+	overflow: hidden
+
+	.footer
+		width: 73.125% /*1170px*/
+		margin: 0 auto
+		padding: 100px 0 40px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		.footer-social
+			width: 100%
+			display: flex
+			justify-content: center
+			margin-bottom: 70px
+
+			li:nth-child(2)
+				margin: 0 26px
+
+			li:hover
+				background-color: #02cfb4
+			li:hover a
+				color: #22252c
+
+			li
+				width: 53px
+				height: 53px
+				border-radius: 50px
+				background-color: #313741
+				display: flex
+				justify-content: center
+				align-self: center
+				transition: background-color .2s
+
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+					font-size: 23px
+					color: #02cfb4
+					transition: color .2s
+
+		.fotter-line
+			width: 100%
+			height: 1px
+			background-color: #313741
+			margin-bottom: 35px
+
+		.footer-text
+			font-family: "Open Sans", sans-serif
+			font-weight: 500
+			font-size: 14px
+			color: #02cfb4
+			text-transform: uppercase
+/*................end footer..........*/

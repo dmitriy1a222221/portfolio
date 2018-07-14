@@ -19,7 +19,11 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.1.0"
+  },
+  "dependencies": {
+    "waypoints": "^4.0.1"
   }
 }

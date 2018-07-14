@@ -30,8 +30,10 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('scripts', function() {
 	return gulp.src('app/js/main.js')
-		.pipe(uglify()) // Сжимаем JS файл
-        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+		//.pipe(concat('main.js'))
+        //.pipe(ignore.exclude([ "**/*.map" ]))
+		//.pipe(uglify()) // Сжимаем JS файл
+        //.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 

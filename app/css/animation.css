@@ -1,3 +1,9 @@
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
@@ -17,6 +23,34 @@
     opacity: 1;
     -webkit-transform: none;
             transform: none; } }
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInRight100 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInRight100 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+.fadeInRight100 {
+  -webkit-animation-name: fadeInRight100;
+          animation-name: fadeInRight100; }
 
 @-webkit-keyframes fadeInLeft {
   from {
@@ -38,6 +72,34 @@
     -webkit-transform: none;
             transform: none; } }
 
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInLeftPhoto {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+            transform: translate3d(10%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-45px, 45px);
+            transform: translate(-45px, 45px); } }
+
+@keyframes fadeInLeftPhoto {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+            transform: translate3d(10%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(-45px, 45px);
+            transform: translate(-45px, 45px); } }
+
+.fadeInLeftPhoto {
+  -webkit-animation-name: fadeInLeftPhoto;
+          animation-name: fadeInLeftPhoto; }
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -58,6 +120,10 @@
     -webkit-transform: none;
             transform: none; } }
 
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp; }
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -77,3 +143,7 @@
     opacity: 1;
     -webkit-transform: none;
             transform: none; } }
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown; }

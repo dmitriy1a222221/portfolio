@@ -13,20 +13,21 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<script src="js/main.js" defer></script>
+    <script src="js/wow.js" defer></script>
 </head>
 <body>
     <header class="wrapp-header">
         <div class="header">
             <div class="header__top-block">
                 <div class="header__social">
-                    <ul class="social">
+                    <ul class="social wow">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                         <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                     </ul>
                 </div>
                 <div class="header__navigation">
-                    <div class="nav_humburger">
+                    <div class="nav_humburger wow">
                         <div class="humburger-line1"></div>
                         <div class="humburger-line2"></div>
                         <div class="humburger-line3"></div>
@@ -34,11 +35,11 @@
                 </div>
             </div>
             <div class="header__greeting">
-                <h2 class="greeting">Hello!</h2><br>
-                <p class="header_named">
+                <h2 class="greeting wow">Hello!</h2><br>
+                <p class="header_named wow" data-wow-delay="0.5s"   >
                     <span class="hed_text-light">I'm </span><span class="header_text-semibold">Dmitriy Kasyanchuk</span>
                 </p>
-                <p class="header__speciality">
+                <p class="header__speciality wow">
                     Front-end developer
                 </p>
             </div>
@@ -49,14 +50,14 @@
             <div class="about-me__block">
                 <div class="about-me__wrapp-elem">
                     <div class="about-me__photo">
-                        <div class="about-me__border">
-                            <img src="img/myPhoto.png" alt="Dmitriy Kasyanchuk" class="about-me__img">
+                        <div class="about-me__border fadeInRightPhoto  wow animated">
+                            <img src="img/myPhoto.png" alt="Dmitriy Kasyanchuk" class="about-me__img fadeInLeftPhoto wow animated">
                         </div>
                     </div>
-                    <div class="about-me__definition">
+                    <div class="about-me__definition fadeInRight wow animated">
                         <h2 class="about-me__title title">About me</h2>
                         <p class="about-me__description">
-                            Hello! I’m Oliver Queen. Web Developer
+                            Hello! I’m Dmitriy Kasyanchuk. Web Developer
                             with over 8 years of experience. Experienced
                             with all stages of the development cycle
                             for dynamic web projects. Having an in-depth
@@ -73,13 +74,15 @@
                         </ul>
                     </div>
                 </div>
-                <button class="about-me__btn">
-                    <i class="fas fa-cloud-download-alt"></i>
-                    Download Resume
-                </button>
+               <div class="about-me__wrapp-btn">
+                   <button class="about-me__btn">
+                       <i class="fas fa-cloud-download-alt"></i>
+                       Download Resume
+                   </button>
+               </div>
             </div>
             <h2 class="about-me__interests title">My Interests</h2>
-            <ul class="about-me__interests-icon">
+            <ul class="about-me__interests-icon fadeInUp wow animated">
                 <li>
                     <div class="about-me__icon">
                         <i class="fas fa-plane"></i>
@@ -131,5 +134,363 @@
             </ul>
         </div>
     </div>
+    <div class="wrapp-education">
+        <div class="education">
+            <h2 class="education-work__ed title fadeInDown wow animated">Education</h2>
+            <ul class="edu-work__list_first">
+                <li>
+                    <div class="graduation-cap">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="block-border-point-response block-border-point-response_first">
+                        <div class="block-point"></div>
+                    </div>
+                    <div class="block-border-point-response block-border-point-response_second">
+                        <div class="block-point"></div>
+                    </div>
+                    <div class="plug"></div>
+                </li>
+                <li>
+                    <div class="block-info fadeInRight100 wow animated">
+                        <h3 class="named text-left">
+                            NPU Dragomanova
+                        </h3>
+                        <p class="named__description text-left">
+                            Sep 2015 - Jun 2019
+                        </p>
+                        <p class="list-item__description text-left">
+                            At this university he studied at
+                            the Faculty of Informatics, got knowledge
+                            of such disciplines as programming,
+                            information communication technologies,
+                            higher mathematics.
+                        </p>
+                    </div>
+                    <div class="block-info fadeInRight100 wow animated" data-wow-delay="0.5s">
+                        <h3 class="named text-left">Main Academy</h3>
+                        <p class="named__description text-left">
+                            Jan 2017 - Jun 2018
+                        </p>
+                        <p class="list-item__description text-left">
+                            Studying the direction of the front-end,
+                            here I learned how to design the sites
+                            using the stack of the latest web technologies.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="edu-work__list">
+                <li>
+                    <div class="block-info fadeInLeft wow animated">
+                        <h3 class="named text-right">
+                            NPU Dragomanova
+                        </h3>
+                        <p class="named__description text-right">
+                            Sep 2015 - Jun 2019
+                        </p>
+                    </div>
+                    <p class="list-item__description text-right margin-top fadeInLeft wow animated" data-wow-delay="0.5s">
+                        Studying the direction of the front-end,
+                        here I learned how to design the sites
+                        using the stack of the latest web technologies.
+                    </p>
+                </li>
+                <li>
+                    <div class="graduation-cap">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="block-border-point">
+                        <div class="block-point"></div>
+                    </div>
+                    <div class="block-border-point">
+                        <div class="block-point"></div>
+                    </div>
+                    <div class="plug"></div>
+                </li>
+                <li>
+                    <p class="list-item__description text-left margin-bottom fadeInRight100 wow animated">
+                        At this university he studied at
+                        the Faculty of Informatics, got knowledge
+                        of such disciplines as programming,
+                        information communication technologies,
+                        higher mathematics.
+                    </p>
+                    <div class="block-info fadeInRight100 wow animated" data-wow-delay="0.5s">
+                        <h3 class="named text-left">Main Academy</h3>
+                        <p class="named__description text-left">
+                            Jan 2017 - Jun 2018
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapp-work">
+        <div class="work">
+            <h2 class="education-work__ed title fadeInDown wow animated">Work Experience</h2>
+            <ul class="edu-work__list_first">
+                <li>
+                    <div class="graduation-cap">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="block-border-point-response block-border-point-response_first">
+                        <div class="block-point"></div>
+                    </div>
+                    <div class="block-border-point-response block-border-point-response_second">
+                        <div class="block-point"></div>
+                    </div>
+                    <div class="plug"></div>
+                </li>
+                <li>
+                    <div class="block-info fadeInRight100 wow animated">
+                        <h3 class="named text-left">
+                            NPU Dragomanova
+                        </h3>
+                        <p class="named__description text-left">
+                            Sep 2015 - Jun 2019
+                        </p>
+                        <p class="list-item__description text-left">
+                            At this university he studied at
+                            the Faculty of Informatics, got knowledge
+                            of such disciplines as programming,
+                            information communication technologies,
+                            higher mathematics.
+                        </p>
+                    </div>
+                    <div class="block-info fadeInRight100 wow animated" data-wow-delay="0.5s">
+                        <h3 class="named text-left">Main Academy</h3>
+                        <p class="named__description text-left">
+                            Jan 2017 - Jun 2018
+                        </p>
+                        <p class="list-item__description text-left">
+                            Studying the direction of the front-end,
+                            here I learned how to design the sites
+                            using the stack of the latest web technologies.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="edu-work__list">
+                <li>
+                    <div class="block-info fadeInLeft wow animated">
+                        <h3 class="named text-right">
+                            NPU Dragomanova
+                        </h3>
+                        <p class="named__description text-right">
+                            Sep 2015 - Jun 2019
+                        </p>
+                    </div>
+                    <p class="list-item__description text-right margin-top fadeInLeft wow animated" data-wow-delay="0.5s">
+                        Studying the direction of the front-end,
+                        here I learned how to design the sites
+                        using the stack of the latest web technologies.
+                    </p>
+                </li>
+                <li>
+                    <div class="graduation-cap">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="block-border-point">
+                        <div class="block-point"></div>
+                    </div>
+                    <div class="block-border-point">
+                        <div class="block-point"></div>
+                    </div>
+                    <div class="plug"></div>
+                </li>
+                <li>
+                    <p class="list-item__description text-left margin-bottom fadeInRight100 wow animated">
+                        At this university he studied at
+                        the Faculty of Informatics, got knowledge
+                        of such disciplines as programming,
+                        information communication technologies,
+                        higher mathematics.
+                    </p>
+                    <div class="block-info fadeInRight100 wow animated" data-wow-delay="0.5s">
+                        <h3 class="named text-left">Main Academy</h3>
+                        <p class="named__description text-left">
+                            Jan 2017 - Jun 2018
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapp-prof-skills">
+        <div class="prof-skills">
+            <h2 class="prof-skills__title title fadeInUp wow animated">Professional Skills</h2>
+        </div>
+        <div class="wrapp__skills-block wow">
+            <ul class="skills-block__list_external">
+                <li>
+                    <ul class="skills-block__list_internal">
+                        <li>
+                            <div class="description-skills">
+                                <h3 class="title-skill">HTML</h3>
+                                <div class="procent" data-left="17">20%</div>
+                            </div>
+
+                            <div class="bar-panel">
+                                <div class="bar-line" data-width="20" data-edge="90"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="description-skills">
+                                <h3 class="title-skill">CSS</h3>
+                                <div class="procent" data-left="17">20%</div>
+                            </div>
+
+                            <div class="bar-panel">
+                                <div class="bar-line" data-width="20" data-edge="95"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="description-skills">
+                                <h3 class="title-skill">JavaScript</h3>
+                                <div class="procent" data-left="17">20%</div>
+                            </div>
+
+                            <div class="bar-panel">
+                                <div class="bar-line" data-width="20" data-edge="75"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="skills-block__list_internal">
+                        <li>
+                            <div class="description-skills">
+                                <h3 class="title-skill">Gulp</h3>
+                                <div class="procent" data-left="17">20%</div>
+                            </div>
+
+                            <div class="bar-panel">
+                                <div class="bar-line" data-width="20" data-edge="70"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="description-skills">
+                                <h3 class="title-skill">Sass</h3>
+                                <div class="procent" data-left="17">20%</div>
+                            </div>
+
+                            <div class="bar-panel">
+                                <div class="bar-line" data-width="20" data-edge="75"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="description-skills">
+                                <h3 class="title-skill">Photoshop</h3>
+                                <div class="procent" data-left="17">20%</div>
+                            </div>
+
+                            <div class="bar-panel">
+                                <div class="bar-line" data-width="20" data-edge="60"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapp-portfolio">
+        <div class="portfolio">
+            <h2 class="portfolio__title title fadeInUp wow animated">Some of my works</h2>
+        </div>
+        <div class="portfolio__my-works">
+            <ul class="portfolio__list">
+                <li class="portfolio__list-item_1 fadeInUp wow animated" data-wow-delay="0.1s">
+                    <div class="more-block">
+                        <a href="#">
+                            <div class="block-plus"></div>
+                        </a>
+                        <div class="work__description">
+                            <h5 class="work__title">Branding Design</h5>
+                            <div class="work__sub-title">Logo Design</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portfolio__list-item_2 fadeInUp wow animated" data-wow-delay="0.2a">
+                    <div class="more-block">
+                        <a href="#">
+                            <div class="block-plus"></div>
+                        </a>
+                        <div class="work__description">
+                            <h5 class="work__title">Branding Design</h5>
+                            <div class="work__sub-title">Logo Design</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portfolio__list-item_3 fadeInUp wow animated" data-wow-delay="0.3s">
+                    <div class="more-block">
+                        <a href="#">
+                            <div class="block-plus"></div>
+                        </a>
+                        <div class="work__description">
+                            <h5 class="work__title">Branding Design</h5>
+                            <div class="work__sub-title">Logo Design</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portfolio__list-item_4 fadeInUp wow animated"  data-wow-delay="0.4s">
+                    <div class="more-block">
+                        <a href="#">
+                            <div class="block-plus"></div>
+                        </a>
+                        <div class="work__description">
+                            <h5 class="work__title">Branding Design</h5>
+                            <div class="work__sub-title">Logo Design</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portfolio__list-item_5 fadeInUp wow animated"  data-wow-delay="0.5s">
+                    <div class="more-block">
+                        <a href="#">
+                            <div class="block-plus"></div>
+                        </a>
+                        <div class="work__description">
+                            <h5 class="work__title">Branding Design</h5>
+                            <div class="work__sub-title">Logo Design</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="portfolio__list-item_6 fadeInUp wow animated" data-wow-delay="0.6s">
+                    <div class="more-block">
+                        <a href="#">
+                            <div class="block-plus"></div>
+                        </a>
+                        <div class="work__description">
+                            <h5 class="work__title">Branding Design</h5>
+                            <div class="work__sub-title">Logo Design</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapp-contact">
+        <div class="contact">
+            <h2 class="contact__title title fadeInUp wow animated">Contact Me</h2>
+            <form action="#" class="contact-form">
+                <div class="wrapp-input-form">
+                    <input type="text" placeholder="NAME" class="contact__name fadeInLeft wow animated">
+                    <input type="email" placeholder="EMAIL" class="fadeInRight100 wow animated">
+                </div>
+                <textarea class="contact-message fadeInDown wow animated" data-wow-delay=".4s" placeholder="MESSAGE" name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit" value="Send now" class="contact-submit fadeInUp wow animated" data-wow-delay=".6s">Send now</button>
+            </form>
+        </div>
+    </div>
+    <footer class="wrapp-footer">
+        <div class="footer">
+            <ul class="footer-social">
+                <li class="fadeInUp wow animated" data-wow-delay="0.6s"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="fadeInUp wow animated" data-wow-delay="0.2s"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="fadeInUp wow animated" data-wow-delay="0.8s"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+            <div class="fotter-line"></div>
+            <p class="footer-text fadeInUp wow animated">Dmitriy © 2017. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
 </body>
 </html>
