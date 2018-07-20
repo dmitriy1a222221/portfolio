@@ -1,5 +1,6 @@
 /node_modules/
 /app/
+/.idea/
 /.git/
 /**/*.psd
 /**/package-lock.json
