@@ -10,6 +10,8 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
+var gulpIgnore = require('gulp-ignore');
+var gulpUtil = require('gulp-util');
 
 gulp.task('sass', function(){ // Создаем таск Sass
 	return gulp.src('app/sass/**/*.sass') // Берем источник
@@ -29,9 +31,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('scripts', function() {
-	return gulp.src('app/js/main.js')
-		//.pipe(concat('main.js'))
-        //.pipe(ignore.exclude([ "**/*.map" ]))
+	return gulp.src(['app/js/*.js'])
 		//.pipe(uglify()) // Сжимаем JS файл
         //.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
@@ -74,16 +74,18 @@ gulp.task('img', function() {
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'app/css/main.css',
-		'app/css/main.min.css'
+        'app/css/main.css',
+        'app/css/animation.css',
+        'app/css/media.css',
+        'app/css/reset.css',
 		])
-	.pipe(gulp.dest('dist/css'))
+	.pipe(gulp.dest('dist/css'));
 
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-	.pipe(gulp.dest('dist/fonts'))
+	.pipe(gulp.dest('dist/fonts'));
 
 	var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('dist/js'));
 
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));
@@ -92,6 +94,6 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
 gulp.task('clear', function (callback) {
 	return cache.clearAll();
-})
+});
 
 gulp.task('default', ['watch']);

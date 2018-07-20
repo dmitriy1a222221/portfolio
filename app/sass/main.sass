@@ -1,3 +1,5 @@
+//body
+//	position: relative
 /*.......common-styles............*/
 .title
 	font-family: "Open Sans", sans-serif
@@ -21,6 +23,46 @@
 .margin-bottom
 	margin-bottom: 150px
 /*.......end-common-styles............*/
+/*.....preloader.............*/
+
+.preloader
+  position: fixed
+  left: 0
+  top: 0
+  width: 100vw
+  height: 100vh
+  background-color: #22252c
+  z-index: 9
+  transition: all 1s
+  opacity: 1
+  visibility: visible
+  display: flex
+  justify-content: center
+  align-items: center
+
+  #load_perc
+    font-family: "Open Sans", sans-serif
+    font-weight: 600
+    font-size: 20px
+    color: #ffffff
+
+  .loader
+    width: 120px
+    height: 120px
+    border: 10px solid #313741
+    border-radius: 50%
+    border-top-color: #00d7bb
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    animation: 1s spin infinite linear
+
+  &.done
+    opacity: 0
+    visibility: hidden
+
+/*.....end preloader.............*/
 /*........header..............*/
 .wrapp-header
 	width: 100%
@@ -54,6 +96,7 @@
 
 		.header__navigation
 
+
 			/*..........humburger............*/
 			.nav_humburger
 				display: flex
@@ -65,10 +108,16 @@
 				animation-fill-mode: both
 				cursor: pointer
 
+				&_click
+					position: fixed
+					right: 4%
+					z-index: 11
+
 				.humburger-line1
 					width: 40px
 					height: 3px
 					background-color: #ffffff
+					transition: transform .2s
 
 				.humburger-line2
 					width: 32px
@@ -80,7 +129,46 @@
 					width: 40px
 					height: 3px
 					background-color: #ffffff
+					transition: transform .2s
 			/*..........end-humburger............*/
+
+
+			.navigation-wrapp-element
+				visibility: hidden
+				position: fixed
+				top: 0
+				right: -100%
+				width: 100%
+				max-width: 320px
+				height: 100vh
+				background-color: #22252c
+				opacity: .9
+				transition: all .3s
+				z-index: 10
+
+				//&_click
+				//	visibility: visible
+				//	right: 0
+				.header-nav__list
+
+					display: flex
+					flex-direction: column
+					align-items: flex-start
+					justify-content: flex-start
+					margin: 100px 0 0 50px
+
+					li
+						margin-bottom: 20px
+						border-bottom: 2px solid transparent
+						transition: border-bottom .2s
+						&:hover
+							border-bottom: 2px solid #ffffff
+
+						a
+							font-family: "Open Sans", sans-serif
+							font-weight: 600
+							font-size: 18px
+							color: #ffffff
 
 	/*....................main-text............*/
 	.header__greeting
@@ -150,7 +238,7 @@
 							width: 100%
 							max-width: 385px
 							height: auto
-							transform: translate(-45px, 45px)
+							transform: translate(-35px, 35px)
 
 		.about-me__interests
 			margin: 130px 0 75px 6.8376068376068376068376068376068%
@@ -613,6 +701,20 @@
 			justify-content: center
 			flex-wrap: wrap
 
+			&_item-1
+				background-image: url('../img/work-item1.png')
+			&_item-2
+				background-image: url('../img/work-item2.png')
+			&_item-3
+				background-image: url('../img/work-item3.png')
+			&_item-4
+				background-image: url('../img/work-item4.png')
+			&_item-5
+				background-image: url('../img/work-item5.png')
+			&_item-6
+				background-image: url('../img/work-item6.png')
+
+
 			li
 				width: 300px
 				height: 300px
@@ -720,23 +822,60 @@
 				flex-wrap: wrap
 				margin-bottom: 30px
 
-				input
+				.box-input
 					width: 47.264957264957264957264957264957%
-					height: 40px
-					background-color: #22252c
-					border: none
-					border-bottom: 2px solid #58616d
-					font-family: "Open Sans", sans-serif
-					font-weight: 400
-					font-size: 14px
-					color: #8491a2
-					transition: border-bottom-color .3s
+					position: relative
 
-					&:focus
-						border-bottom: 2px solid #02cfb4
+					input
+						width: 100%
+						height: 40px
+						background-color: #22252c
+						border: none
+						border-bottom: 2px solid #58616d
+						font-family: "Open Sans", sans-serif
+						font-weight: 400
+						font-size: 14px
+						color: #8491a2
+						transition: border-bottom-color .3s
+
+
+						//&:focus ~ span,
+						//&:valid ~ span
+						//	top: -30px
+						//	font-size: 13px
+						//	color: #00d7bb
+                        //
+						//&:focus
+						//	border-bottom: 2px solid #02cfb4
+                        //
+						//	&:valid
+						//		border-bottom: 2px solid #02cfb4
+                        //
+						//	&:invalid
+						//		border-bottom: 2px solid #cf5402
+
+					span
+						position: absolute
+						top: 0
+						left: 0
+						color: #8491a2
+						padding-top: 10px
+						pointer-events: none
+						font-size: 16px
+						transition: .2s ease all
+
+					.span_focus
+						top: -30px
+						font-size: 13px
+						color: #00d7bb
+
+			.box-textarea
+				width: 97.435897435897435897435897435897%
+				position: relative
+				margin-top: 5px
 
 			.contact-message
-				width: 97.435897435897435897435897435897%
+				width: 100%
 				height: 270px
 				background-color: #22252c
 				border: none
@@ -747,10 +886,41 @@
 				color: #8491a2
 				transition: border-bottom-color .3s
 				margin-bottom: 70px
+				padding-top: 5px
 				resize: none
+
+				&:focus ~ span
+					top: -30px
+					font-size: 13px
+					color: #00d7bb
 
 				&:focus
 					border-bottom: 2px solid #02cfb4
+
+					&:valid
+						border-bottom: 2px solid #02cfb4
+
+					&:invalid
+						border-bottom: 2px solid #cf5402
+
+			.span_focus
+				top: -30px
+				font-size: 13px
+				color: #00d7bb
+
+
+
+			span
+				position: absolute
+				top: 0
+				left: 0
+				color: #8491a2
+				padding-top: 10px
+				pointer-events: none
+				font-size: 16px
+				transition: .2s ease all
+
+
 
 			.contact-submit
 				padding: 15px 45px
@@ -772,9 +942,10 @@
 				transition: opacity .2s
 
 				&:hover
-					opacity: .8
+					opacity: 0.8
 				&:active
-					opacity: .5
+					opacity: 0.5
+
 
 /*............end contact me..........*/
 /*.................footer.............*/

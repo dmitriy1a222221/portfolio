@@ -1,6 +1,8 @@
-.animated
-  animation-duration: 1s
-  animation-fill-mode: both
+@keyframes spin
+  from
+    transform: translate(-50%, -50%) rotate(0deg)
+  to
+    transform: translate(-50%, -50%) rotate(360deg)
 
 @keyframes fadeInRight
   from
@@ -9,8 +11,6 @@
   to
     opacity: 1
     transform: none
-.fadeInRight
-  animation-name: fadeInRight
 
 @keyframes fadeInRight100
   from
@@ -19,9 +19,6 @@
   to
     opacity: 1
     transform: none
-.fadeInRight100
-  animation-name: fadeInRight100
-
 
 @keyframes fadeInLeft
   from
@@ -30,8 +27,6 @@
   to
     opacity: 1
     transform: none
-.fadeInLeft
-  animation-name: fadeInLeft
 
 @keyframes fadeInLeftPhoto
   from
@@ -39,9 +34,7 @@
     transform: translate3d(10%, 0, 0)
   to
     opacity: 1
-    transform: translate(-45px, 45px)
-.fadeInLeftPhoto
-  animation-name: fadeInLeftPhoto
+    transform: translate(-35px, 35px)
 
 @keyframes fadeInUp
   from
@@ -50,8 +43,7 @@
   to
     opacity: 1
     transform: none
-.fadeInUp
-  animation-name: fadeInUp
+
 
 @keyframes fadeInDown
   from
@@ -60,9 +52,23 @@
   to
     opacity: 1
     transform: none
+
+.animated
+  animation-duration: 1s
+  animation-fill-mode: both
+
 .fadeInDown
   animation-name: fadeInDown
-
+.fadeInUp
+  animation-name: fadeInUp
+.fadeInRight
+  animation-name: fadeInRight
+.fadeInLeft
+  animation-name: fadeInLeft
+.fadeInRight100
+  animation-name: fadeInRight100
+.fadeInLeftPhoto
+  animation-name: fadeInLeftPhoto
 
 
 
