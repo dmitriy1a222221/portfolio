@@ -153,4 +153,19 @@ function skillBar() {
     })
 })();
 //...............end validation form..................
-
+class Modal {
+    constructor(btnOpen, modalWrap) {
+        this.btnOpen = document.querySelector(`${btnOpen}`);
+        this.modalWrap = document.querySelector(`${modalWrap}`);
+    }
+    modalLogic() {
+        this.btnOpen.addEventListener('click', () => {
+            this.modalWrap.style.cssText = 'visibility: visible; opacity: 1; z-index: 20';
+        });
+        this.modalWrap.addEventListener('click', () => {
+            this.modalWrap.style.cssText = 'visibility: hidden; opacity: 0; z-index: -10';
+        })
+    }
+}
+let modal = new Modal('.about-me__wrapp-btn', '.wrap-modal');
+modal.modalLogic();

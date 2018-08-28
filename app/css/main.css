@@ -76,10 +76,144 @@
     visibility: hidden; }
 
 /*.....end preloader.............*/
+/*....language-icon......*/
+.language-icon-wrap {
+  position: fixed;
+  top: 45%;
+  width: 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .language-icon-wrap .lang-icon {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: opacity .1s;
+    -o-transition: opacity .1s;
+    transition: opacity .1s; }
+    .language-icon-wrap .lang-icon:hover {
+      opacity: .7; }
+    .language-icon-wrap .lang-icon:last-child {
+      margin-bottom: 0; }
+    .language-icon-wrap .lang-icon_1 {
+      background: url("../img/Ukraine.ico") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .language-icon-wrap .lang-icon_2 {
+      background: url("../img/United-Kingdom.ico") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .language-icon-wrap .lang-icon_3 {
+      background: url("../img/Russia.ico") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+
+/*....end_language-icon......*/
+/*.....modal........*/
+.wrap-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -10;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.modal {
+  width: 40%;
+  min-width: 220px;
+  background-color: #22252c;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 30px 0 40px; }
+
+.modal__wrapp-btn .about-me__btn {
+  margin: 10px 10px 0 10px;
+  width: 195px;
+  height: 55px;
+  border: none;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  background: -webkit-linear-gradient(45deg, #12d78d 7%, #19c57a 46%, #0dde92 97%);
+  background: -o-linear-gradient(45deg, #12d78d 7%, #19c57a 46%, #0dde92 97%);
+  background: linear-gradient(45deg, #12d78d 7%, #19c57a 46%, #0dde92 97%);
+  cursor: pointer;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s;
+  color: #f0ebff;
+  font-size: 12.78px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .modal__wrapp-btn .about-me__btn:hover {
+    opacity: 0.9; }
+  .modal__wrapp-btn .about-me__btn:active {
+    opacity: 0.7; }
+  .modal__wrapp-btn .about-me__btn i {
+    margin-right: 3px; }
+
+/*.....end_modal......*/
 /*........header..............*/
 .wrapp-header {
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background: url("../img/header_bg.png") center center no-repeat;
   -webkit-background-size: cover;
@@ -88,10 +222,10 @@
 
 .header {
   width: 73.125%;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 40px 0 310px;
-  /*....................main-text............*/
-  /*...............end-main-text............*/ }
+  /*....................main-text............*/ }
   .header .header__top-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -266,15 +400,52 @@
       -webkit-animation-fill-mode: both;
               animation-fill-mode: both; }
 
+.language-icon-wrap__nav {
+  margin-left: 15%;
+  width: 100px;
+  display: none;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /*...............end-main-text............*/ }
+  .language-icon-wrap__nav .lang-icon__nav {
+    width: 100%;
+    height: 30px;
+    margin-right: 5px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: opacity .1s;
+    -o-transition: opacity .1s;
+    transition: opacity .1s; }
+    .language-icon-wrap__nav .lang-icon__nav:hover {
+      opacity: .7; }
+    .language-icon-wrap__nav .lang-icon__nav_1 {
+      background: url("../img/Ukraine.ico") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .language-icon-wrap__nav .lang-icon__nav_2 {
+      background: url("../img/United-Kingdom.ico") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    .language-icon-wrap__nav .lang-icon__nav_3 {
+      background: url("../img/Russia.ico") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+
 /*........end-header..............*/
 /*........abut-us................*/
 .wrapp-about-me {
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #22252c; }
   .wrapp-about-me .about-me {
     width: 73.125%;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 180px 0 140px; }
     .wrapp-about-me .about-me .about-me__block .about-me__wrapp-elem {
@@ -420,7 +591,7 @@
   color: #00d7bb;
   text-transform: uppercase; }
 
-.about-me__wrapp-btn .about-me__btn {
+.about-me__wrapp-btn {
   width: 195px;
   height: 55px;
   margin-top: 45px;
@@ -436,22 +607,36 @@
   -o-transition: opacity .2s;
   transition: opacity .2s;
   color: #ffffff;
-  font-size: 12.78px; }
-  .about-me__wrapp-btn .about-me__btn:hover {
+  font-size: 12.78px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .about-me__wrapp-btn:hover {
     opacity: 0.9; }
-  .about-me__wrapp-btn .about-me__btn:active {
+  .about-me__wrapp-btn:active {
     opacity: 0.7; }
+  .about-me__wrapp-btn i {
+    margin-right: 3px; }
 
 /*........end-abut-us............*/
 /*...........education...........*/
 .wrapp-education {
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #313741;
   overflow: hidden; }
   .wrapp-education .education {
     width: 73.125%;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 180px 0 170px;
     display: -webkit-box;
@@ -739,12 +924,12 @@
 /*...............work...............*/
 .wrapp-work {
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #22252c;
   overflow: hidden; }
   .wrapp-work .work {
     width: 73.125%;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 180px 0 170px;
     display: -webkit-box;
@@ -765,12 +950,12 @@
 /*...........prof-sills...........*/
 .wrapp-prof-skills {
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #22252c;
   overflow: hidden; }
   .wrapp-prof-skills .prof-skills {
     width: 73.125%;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 60px 0 125px;
     display: -webkit-box;
@@ -870,12 +1055,12 @@
 /*...........portfolio...............*/
 .wrapp-portfolio {
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #22252c;
   overflow: hidden; }
   .wrapp-portfolio .portfolio {
     width: 73.125%;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 140px 0 0;
     display: -webkit-box;
@@ -914,15 +1099,23 @@
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
       .wrapp-portfolio .portfolio__my-works .portfolio__list_item-1 {
-        background-image: url("../img/work-item1.png"); }
+        background: url("../img/work-itemActive-1.png") 50% 0 no-repeat;
+        -webkit-background-size: cover;
+                background-size: cover; }
       .wrapp-portfolio .portfolio__my-works .portfolio__list_item-2 {
-        background-image: url("../img/work-item2.png"); }
+        background: url("../img/work-itemActive-2.png") 50% 0 no-repeat;
+        -webkit-background-size: cover;
+                background-size: cover; }
       .wrapp-portfolio .portfolio__my-works .portfolio__list_item-3 {
-        background-image: url("../img/work-item3.png"); }
+        background: url("../img/work-itemActive-3.png") 50% 0 no-repeat;
+        -webkit-background-size: cover;
+                background-size: cover; }
       .wrapp-portfolio .portfolio__my-works .portfolio__list_item-4 {
         background-image: url("../img/work-item4.png"); }
       .wrapp-portfolio .portfolio__my-works .portfolio__list_item-5 {
-        background-image: url("../img/work-item5.png"); }
+        background: url("../img/work-itemActive-4.png") 10% 0 no-repeat;
+        -webkit-background-size: cover;
+                background-size: cover; }
       .wrapp-portfolio .portfolio__my-works .portfolio__list_item-6 {
         background-image: url("../img/work-item6.png"); }
       .wrapp-portfolio .portfolio__my-works .portfolio__list li {
@@ -1016,12 +1209,12 @@
 /*..........contact me...............*/
 .wrapp-contact {
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #22252c;
   overflow: hidden; }
   .wrapp-contact .contact {
     width: 73.125%;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 140px 0 0;
     display: -webkit-box;
@@ -1177,12 +1370,12 @@
 /*.................footer.............*/
 .wrapp-footer {
   width: 100%;
-  max-width: 1600px;
   margin: 0 auto;
   background-color: #22252c;
   overflow: hidden; }
   .wrapp-footer .footer {
     width: 73.125%;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 100px 0 40px;
     display: -webkit-box;

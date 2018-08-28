@@ -13,15 +13,37 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<script src="js/main.js" defer></script>
+    <script src="js/LanguageChange.js" defer></script>
     <script src="js/scrolling.js" defer></script>
     <script src="js/preloader.js" defer></script>
     <script src="js/wow.js" defer></script>
-    <script src="../../../Downloads/gulp-lesson-master/gulp-lesson-master/gulpfile.js"></script>
+    <!--<script src="../../../Downloads/gulp-lesson-master/gulp-lesson-master/gulpfile.js"></script>-->
 </head>
 <body>
     <div class="preloader">
         <div class="loader"></div>
         <span id="load_perc">0%</span>
+    </div>
+    <div class="language-icon-wrap">
+        <div class="lang-icon lang-icon_1 uk"></div>
+        <div class="lang-icon lang-icon_2 eng"></div>
+        <div class="lang-icon lang-icon_3 rus"></div>
+    </div>
+    <div class="wrap-modal">
+        <div class="modal">
+            <div class="modal__wrapp-btn">
+                <a href="https://drive.google.com/file/d/11d4eKkvg59I8UpcpxZxphxWKjVFCM9jQ/view?usp=sharing" class="about-me__btn">
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <span class="localization" data-name="modal_resume_1">Download Ukr</span>
+                </a>
+            </div>
+            <div class="modal__wrapp-btn">
+                <a href="https://drive.google.com/file/d/11d4eKkvg59I8UpcpxZxphxWKjVFCM9jQ/view?usp=sharing" class="about-me__btn">
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <span class="localization" data-name="modal_resume_2">Download Eng</span>
+                </a>
+            </div>
+        </div>
     </div>
     <header id="home" class="wrapp-header">
         <div class="header">
@@ -41,23 +63,28 @@
                     </div>
                     <div class="navigation-wrapp-element">
                         <ul class="header-nav__list">
-                            <li><a class="nav__link" href="#home">Home</a></li>
-                            <li><a class="nav__link" href="#about-me">About me</a></li>
-                            <li><a class="nav__link" href="#education">Education</a></li>
-                            <li><a class="nav__link" href="#work">Work</a></li>
-                            <li><a class="nav__link" href="#skills">Skills</a></li>
-                            <li><a class="nav__link" href="#my-works">My works</a></li>
-                            <li><a class="nav__link" href="#contact">Contact me</a></li>
+                            <li><a class="nav__link localization" data-name="nav__link-home" href="#home">Home</a></li>
+                            <li><a class="nav__link localization" data-name="nav__link-aboutMe" href="#about-me">About me</a></li>
+                            <li><a class="nav__link localization" data-name="nav__link-education" href="#education">Education</a></li>
+                            <li><a class="nav__link localization" data-name="nav__link-work" href="#work">Work</a></li>
+                            <li><a class="nav__link localization" data-name="nav__link-skills" href="#skills">Skills</a></li>
+                            <li><a class="nav__link localization" data-name="nav__link-myWorks" href="#my-works">My works</a></li>
+                            <li><a class="nav__link localization" data-name="nav__link-contact" href="#contact">Contact me</a></li>
                         </ul>
+                        <div class="language-icon-wrap__nav">
+                            <div class="lang-icon__nav lang-icon__nav_1 uk"></div>
+                            <div class="lang-icon__nav lang-icon__nav_2 eng"></div>
+                            <div class="lang-icon__nav lang-icon__nav_3 rus"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="header__greeting">
-                <h2 class="greeting wow">Hello!</h2><br>
+                <h2 class="localization greeting wow" data-name="hello">Hello!</h2><br>
                 <p class="header_named wow" data-wow-delay="0.5s"   >
-                    <span class="hed_text-light">I'm </span><span class="header_text-semibold">Dmitriy Kasyanchuk</span>
+                    <span class="localization hed_text-light" data-name="myName_part1">I'm </span><span class="header_text-semibold localization" data-name="myName_part2">Dmitriy Kasyanchuk</span>
                 </p>
-                <p class="header__speciality wow">
+                <p class="localization header__speciality wow" data-name="thePost">
                     Front-end developer
                 </p>
             </div>
@@ -73,39 +100,51 @@
                         </div>
                     </div>
                     <div class="about-me__definition fadeInRight wow animated">
-                        <h2 class="about-me__title title">About me</h2>
-                        <p class="about-me__description">
+                        <h2 class="about-me__title title localization" data-name="about-me__title">About me</h2>
+                        <p class="about-me__description localization" data-name="about-me__description">
                             Hello! I’m Dmitriy Kasyanchuk. Web Developer
-                            with over 8 years of experience. Experienced
+                            with over 1 year of experience. Experienced
                             with all stages of the development cycle
                             for dynamic web projects. Having an in-depth
                             knowledge including advanced HTML5, CSS3,
-                            JavaScript, jQuery, Angular JS. Strong
-                            background in management and leadership.
+                            JavaScript, React JS.
                         </p>
                         <ul class="about-me__contact">
-                            <li><span class="about-me_green">NAME: </span>Dmitriy Kasyanchuk</li>
-                            <li><span class="about-me_green">Date of birth: </span>02 November 1998</li>
-                            <li><span class="about-me_green">Nationality: </span>Citizen of Ukraine</li>
-                            <li><span class="about-me_green">Phone: </span>+380663485798, +380980384584</li>
-                            <li><span class="about-me_green">Email: </span>dmitriy1a222221@gmail.com</li>
+                            <li>
+                                <span class="about-me_green localization" data-name="about-me_green-name">NAME: </span>
+                                <span class="localization" data-name="about-me__contact-name">Dmitriy Kasyanchuk</span>
+                            </li>
+                            <li>
+                                <span class="about-me_green localization" data-name="about-me_green-date">Date of birth: </span>
+                                <span class="localization" data-name="about-me__contact-date">02 November 1998</span>
+                            </li>
+                            <li>
+                                <span class="about-me_green localization" data-name="about-me_green-nationality">Nationality: </span>
+                                <span class="localization" data-name="about-me__contact-nationality">Citizen of Ukraine</span>
+                            </li>
+                            <li>
+                                <span class="about-me_green localization" data-name="about-me_green-phone">Phone: </span>
+                                <span class="localization" data-name="about-me__contact-phone">+380663485798, +380980384584</span>
+                            </li>
+                            <li>
+                                <span class="about-me_green localization" data-name="about-me_green-email">Email: </span>
+                                <span class="localization" data-name="about-me__contact-email">dmitriy1a222221@gmail.com</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
                <div class="about-me__wrapp-btn">
-                   <button class="about-me__btn">
-                       <i class="fas fa-cloud-download-alt"></i>
-                       Download Resume
-                   </button>
+                   <i class="fas fa-cloud-download-alt"></i>
+                   <span class="localization" data-name="resume">Download Resume</span>
                </div>
             </div>
-            <h2 class="about-me__interests title">My Interests</h2>
+            <h2 class="about-me__interests title localization" data-name="about-me__interests">My Interests</h2>
             <ul class="about-me__interests-icon fadeInUp wow animated">
                 <li class="fadeInUp wow animated" data-wow-delay=".7s">
                     <div class="about-me__icon">
                         <i class="fas fa-plane"></i>
                     </div>
-                    <p class="about-me__icon_description">
+                    <p class="about-me__icon_description localization" data-name="about-me__icon-planing1">
                         Planing
                     </p>
                 </li>
@@ -113,7 +152,7 @@
                     <div class="about-me__icon">
                         <i class="fas fa-headphones"></i>
                     </div>
-                    <p class="about-me__icon_description">
+                    <p class="about-me__icon_description localization" data-name="about-me__icon-Music">
                         Music
                     </p>
                 </li>
@@ -121,7 +160,7 @@
                     <div class="about-me__icon">
                         <i class="fas fa-coffee"></i>
                     </div>
-                    <p class="about-me__icon_description">
+                    <p class="about-me__icon_description localization" data-name="about-me__icon-coffee">
                         Coffee
                     </p>
                 </li>
@@ -129,7 +168,7 @@
                     <div class="about-me__icon">
                         <i class="fas fa-fighter-jet"></i>
                     </div>
-                    <p class="about-me__icon_description">
+                    <p class="about-me__icon_description localization" data-name="about-me__icon-planing2">
                         Planing
                     </p>
                 </li>
@@ -137,7 +176,7 @@
                     <div class="about-me__icon">
                         <i class="fas fa-dumbbell"></i>
                     </div>
-                    <p class="about-me__icon_description">
+                    <p class="about-me__icon_description localization" data-name="about-me__icon-sports">
                         Sports
                     </p>
                 </li>
@@ -145,7 +184,7 @@
                     <div class="about-me__icon">
                         <i class="fas fa-globe-americas"></i>
                     </div>
-                    <p class="about-me__icon_description">
+                    <p class="about-me__icon_description localization" data-name="about-me__icon-travelling">
                         Travelling
                     </p>
                 </li>
@@ -154,7 +193,7 @@
     </div>
     <div id="education" class="wrapp-education">
         <div class="education">
-            <h2 class="education-work__ed title fadeInDown wow animated">Education</h2>
+            <h2 class="education-work__ed title fadeInDown wow animated localization" data-name="educationTitle">Education</h2>
             <ul class="edu-work__list_first">
                 <li>
                     <div class="graduation-cap">
@@ -170,13 +209,13 @@
                 </li>
                 <li>
                     <div class="block-info fadeInRight100 wow animated">
-                        <h3 class="named text-left">
+                        <h3 class="named text-left localization" data-name="educationNamed-1">
                             NPU Dragomanova
                         </h3>
-                        <p class="named__description text-left">
+                        <p class="named__description text-left localization" data-name="named_desc-1">
                             Sep 2015 - Jun 2019
                         </p>
-                        <p class="list-item__description text-left">
+                        <p class="list-item__description text-left localization" data-name="list-item__desc-1">
                             At this university he studied at
                             the Faculty of Informatics, got knowledge
                             of such disciplines as programming,
@@ -185,11 +224,11 @@
                         </p>
                     </div>
                     <div class="block-info fadeInRight100 wow animated" data-wow-delay="0.5s">
-                        <h3 class="named text-left">Main Academy</h3>
-                        <p class="named__description text-left">
+                        <h3 class="named text-left localization" data-name="educationNamed-2">Main Academy</h3>
+                        <p class="named__description text-left localization" data-name="named_desc-2">
                             Jan 2017 - Jun 2018
                         </p>
-                        <p class="list-item__description text-left">
+                        <p class="list-item__description text-left localization" data-name="list-item__desc-2">
                             Studying the direction of the front-end,
                             here I learned how to design the sites
                             using the stack of the latest web technologies.
@@ -200,17 +239,18 @@
             <ul class="edu-work__list">
                 <li>
                     <div class="block-info fadeInLeft wow animated">
-                        <h3 class="named text-right">
+                        <h3 class="named text-right localization" data-name="educationNamed-1">
                             NPU Dragomanova
                         </h3>
-                        <p class="named__description text-right">
+                        <p class="named__description text-right localization" data-name="named_desc-1">
                             Sep 2015 - Jun 2019
                         </p>
                     </div>
-                    <p class="list-item__description text-right margin-top fadeInLeft wow animated" data-wow-delay="0.5s">
-                        Studying the direction of the front-end,
-                        here I learned how to design the sites
-                        using the stack of the latest web technologies.
+                    <p class="list-item__description text-right margin-top fadeInLeft wow animated localization" data-wow-delay="0.5s" data-name="list-item__desc-2">
+                        Studying the direction of the
+                        front-end, here I learned how to
+                        design the sites using the stack
+                        of the latest web technologies.
                     </p>
                 </li>
                 <li>
@@ -226,16 +266,16 @@
                     <div class="plug"></div>
                 </li>
                 <li>
-                    <p class="list-item__description text-left margin-bottom fadeInRight100 wow animated">
+                    <p class="list-item__description text-left margin-bottom fadeInRight100 wow animated localization" data-name="list-item__desc-1">
                         At this university he studied at
-                        the Faculty of Informatics, got knowledge
-                        of such disciplines as programming,
-                        information communication technologies,
-                        higher mathematics.
+                        the Faculty of Informatics, got
+                        knowledge of such disciplines as
+                        programming, information communication
+                        technologies, higher mathematics.
                     </p>
                     <div class="block-info fadeInRight100 wow animated" data-wow-delay="0.5s">
-                        <h3 class="named text-left">Main Academy</h3>
-                        <p class="named__description text-left">
+                        <h3 class="named text-left localization" data-name="educationNamed-2">Main Academy</h3>
+                        <p class="named__description text-left localization" data-name="named_desc-2">
                             Jan 2017 - Jun 2018
                         </p>
                     </div>
@@ -245,7 +285,7 @@
     </div>
     <div id="work" class="wrapp-work">
         <div class="work">
-            <h2 class="education-work__ed title fadeInDown wow animated">Work Experience</h2>
+            <h2 class="education-work__ed title fadeInDown wow animated localization" data-name="experienceTitle">Work Experience</h2>
             <ul class="edu-work__list_first">
                 <li>
                     <div class="graduation-cap">
@@ -261,13 +301,13 @@
                 </li>
                 <li>
                     <div class="block-info fadeInRight100 wow animated">
-                        <h3 class="named text-left">
+                        <h3 class="named text-left localization" data-name="experienceNamed-1">
                             NPU Dragomanova
                         </h3>
-                        <p class="named__description text-left">
+                        <p class="named__description text-left localization" data-name="exper-named__desc-1">
                             Sep 2015 - Jun 2019
                         </p>
-                        <p class="list-item__description text-left">
+                        <p class="list-item__description text-left localization" data-name="exper-list-item__desc-1">
                             At this university he studied at
                             the Faculty of Informatics, got knowledge
                             of such disciplines as programming,
@@ -276,11 +316,11 @@
                         </p>
                     </div>
                     <div class="block-info fadeInRight100 wow animated" data-wow-delay="0.5s">
-                        <h3 class="named text-left">Main Academy</h3>
-                        <p class="named__description text-left">
+                        <h3 class="named text-left localization" data-name="experienceNamed-2">Main Academy</h3>
+                        <p class="named__description text-left localization" data-name="exper-named__desc-2">
                             Jan 2017 - Jun 2018
                         </p>
-                        <p class="list-item__description text-left">
+                        <p class="list-item__description text-left localization" data-name="exper-list-item__desc-2">
                             Studying the direction of the front-end,
                             here I learned how to design the sites
                             using the stack of the latest web technologies.
@@ -291,14 +331,14 @@
             <ul class="edu-work__list">
                 <li>
                     <div class="block-info fadeInLeft wow animated">
-                        <h3 class="named text-right">
+                        <h3 class="named text-right localization" data-name="experienceNamed-1">
                             NPU Dragomanova
                         </h3>
-                        <p class="named__description text-right">
+                        <p class="named__description text-right localization" data-name="exper-named__desc-1">
                             Sep 2015 - Jun 2019
                         </p>
                     </div>
-                    <p class="list-item__description text-right margin-top fadeInLeft wow animated" data-wow-delay="0.5s">
+                    <p class="list-item__description text-right margin-top fadeInLeft wow animated localization" data-wow-delay="0.5s" data-name="exper-list-item__desc-2">
                         Studying the direction of the front-end,
                         here I learned how to design the sites
                         using the stack of the latest web technologies.
@@ -317,7 +357,7 @@
                     <div class="plug"></div>
                 </li>
                 <li>
-                    <p class="list-item__description text-left margin-bottom fadeInRight100 wow animated">
+                    <p class="list-item__description text-left margin-bottom fadeInRight100 wow animated localization" data-name="exper-list-item__desc-1">
                         At this university he studied at
                         the Faculty of Informatics, got knowledge
                         of such disciplines as programming,
@@ -325,8 +365,8 @@
                         higher mathematics.
                     </p>
                     <div class="block-info fadeInRight100 wow animated" data-wow-delay="0.5s">
-                        <h3 class="named text-left">Main Academy</h3>
-                        <p class="named__description text-left">
+                        <h3 class="named text-left localization" data-name="experienceNamed-2">Main Academy</h3>
+                        <p class="named__description text-left localization" data-name="exper-named__desc-2">
                             Jan 2017 - Jun 2018
                         </p>
                     </div>
@@ -336,7 +376,7 @@
     </div>
     <div id="skills" class="wrapp-prof-skills">
         <div class="prof-skills">
-            <h2 class="prof-skills__title title fadeInUp wow animated">Professional Skills</h2>
+            <h2 class="prof-skills__title title fadeInUp wow animated localization" data-name="prof-skills">Professional Skills</h2>
         </div>
         <div class="wrapp__skills-block wow">
             <ul class="skills-block__list_external">
@@ -413,40 +453,40 @@
     </div>
     <div id="my-works" class="wrapp-portfolio">
         <div class="portfolio">
-            <h2 class="portfolio__title title fadeInUp wow animated">Some of my works</h2>
+            <h2 class="portfolio__title title fadeInUp wow animated localization" data-name="portfolio__title">Some of my works</h2>
         </div>
         <div class="portfolio__my-works">
             <ul class="portfolio__list">
                 <li class="portfolio__list_item-1 fadeInUp wow animated" data-wow-delay="0.1s">
                     <div class="more-block">
-                        <a href="#">
+                        <a href="https://dmitriy1a222221.github.io/shoopnoActive/">
                             <div class="block-plus"></div>
                         </a>
                         <div class="work__description">
-                            <h5 class="work__title">Branding Design</h5>
-                            <div class="work__sub-title">Logo Design</div>
+                            <h5 class="work__title">Soopno Company</h5>
+                            <div class="work__sub-title">Landing Page</div>
                         </div>
                     </div>
                 </li>
                 <li class="portfolio__list_item-2 fadeInUp wow animated" data-wow-delay="0.2a">
                     <div class="more-block">
-                        <a href="#">
+                        <a href="https://dmitriy1a222221.github.io/moGoactive/">
                             <div class="block-plus"></div>
                         </a>
                         <div class="work__description">
-                            <h5 class="work__title">Branding Design</h5>
-                            <div class="work__sub-title">Logo Design</div>
+                            <h5 class="work__title">MoGo Company</h5>
+                            <div class="work__sub-title">Landing Page</div>
                         </div>
                     </div>
                 </li>
                 <li class="portfolio__list_item-3 fadeInUp wow animated" data-wow-delay="0.3s">
                     <div class="more-block">
-                        <a href="#">
+                        <a href="https://dmitriy1a222221.github.io/Waxom1/">
                             <div class="block-plus"></div>
                         </a>
                         <div class="work__description">
-                            <h5 class="work__title">Branding Design</h5>
-                            <div class="work__sub-title">Logo Design</div>
+                            <h5 class="work__title">Waxom Company</h5>
+                            <div class="work__sub-title">Landing Page</div>
                         </div>
                     </div>
                 </li>
@@ -463,12 +503,12 @@
                 </li>
                 <li class="portfolio__list_item-5 fadeInUp wow animated"  data-wow-delay="0.5s">
                     <div class="more-block">
-                        <a href="#">
+                        <a href="https://dmitriy1a222221.github.io/wifiPlanerPro/">
                             <div class="block-plus"></div>
                         </a>
                         <div class="work__description">
-                            <h5 class="work__title">Branding Design</h5>
-                            <div class="work__sub-title">Logo Design</div>
+                            <h5 class="work__title">WiFi Planer Pro</h5>
+                            <div class="work__sub-title">Coursework</div>
                         </div>
                     </div>
                 </li>
@@ -488,23 +528,23 @@
     </div>
     <div id="contact" class="wrapp-contact">
         <div class="contact">
-            <h2 class="contact__title title fadeInUp wow animated">Contact Me</h2>
+            <h2 class="contact__title title fadeInUp wow animated localization" data-name="contact__title">Contact Me</h2>
             <form action="#" class="contact-form">
                 <div class="wrapp-input-form">
                     <div class="box-input">
                         <input type="text" data-id="name" class="form-elem contact__name filed fadeInLeft wow animated">
-                        <span class="input-span">NAME</span>
+                        <span class="input-span localization" data-name="input_name">NAME</span>
                     </div>
                     <div class="box-input">
                         <input type="text" data-id="email" class="form-elem contact__email filed fadeInRight100 wow animated">
-                        <span class="input-span">EMAIL</span>
+                        <span class="input-span localization" data-name="input__email">EMAIL</span>
                     </div>
                 </div>
                 <div class="box-textarea">
                     <textarea data-id="message" class="form-elem contact-message filed fadeInDown wow animated" data-wow-delay=".4s" name="" id="" cols="30" rows="10"></textarea>
-                    <span class="input-span">MESSAGE</span>
+                    <span class="input-span localization" data-name="input_message">MESSAGE</span>
                 </div>
-                <button type="submit" value="Send now" class="contact-submit fadeInUp wow animated" data-wow-delay=".6s">Send now</button>
+                <button type="submit" value="Send now" class="contact-submit fadeInUp wow animated localization" data-name="btn_send" data-wow-delay=".6s">Send now</button>
             </form>
         </div>
     </div>
@@ -516,7 +556,7 @@
                 <li class="fadeInUp wow animated" data-wow-delay="0.8s"><a target="_blank" href="https://plus.google.com/108041149967155274653"><i class="fab fa-google-plus-g"></i></a></li>
             </ul>
             <div class="fotter-line"></div>
-            <p class="footer-text fadeInUp wow animated">Dmitriy © 2017. ALL RIGHTS RESERVED.</p>
+            <p class="footer-text fadeInUp wow animated localization" data-name="copyright">Dmitriy © 2017. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
 </body>

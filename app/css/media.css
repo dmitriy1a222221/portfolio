@@ -84,7 +84,14 @@
     display: -ms-flexbox !important;
     display: flex !important; }
   .wrapp-portfolio .portfolio__my-works .portfolio__list li {
-    margin: 0 0 25px 0; } }
+    margin: 0 0 25px 0; }
+  .language-icon-wrap {
+    display: none; }
+  .language-icon-wrap__nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
 
 @media screen and (max-width: 435px) {
   .wrapp-about-me .about-me {
